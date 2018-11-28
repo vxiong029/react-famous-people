@@ -59,11 +59,11 @@ class FamousPerson extends Component {
         handleChange={this.handleChange}
         handleClick={this.handleClick} 
       />
-        <span>
-          <FamousPersonList
-          famousPerson={this.state.famousPerson}
-          />
-        </span>
+      
+      <FamousPersonList
+        famousPerson={this.state.famousPerson}
+      />
+      
     </div>
     )
   }
