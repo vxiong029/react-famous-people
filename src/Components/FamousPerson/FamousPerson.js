@@ -53,14 +53,17 @@ class FamousPerson extends Component {
   render() {
     return (
     <div>
+      
       <FamousPersonForm 
         newPerson={this.state.newPerson}
         handleChange={this.handleChange}
         handleClick={this.handleClick} 
       />
-      <FamousPersonList 
-        famousPerson={this.state.famousPerson}
-      />
+        <span>
+          <FamousPersonList
+          famousPerson={this.state.famousPerson}
+          />
+        </span>
     </div>
     )
   }
